@@ -88,14 +88,14 @@ GET https://api.xpluem.com/abc1234567890/0801234567
 
 ---
 
-# โค้ดสำหรับดึงรายการภาษา PHP
+# PHP
 
 ```php
-$url = "ลิ้งอั่งเปา";
-$tel = "กรอกเบอร์ผู้รับ";
+$link = 'ลิงค์ซองของขวัญ';
+$phone = 'เบอร์ผู้รับ';
 $curl = curl_init();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://api.xpluem.com/'.$url.'/'.$tel,
+    CURLOPT_URL => 'https://api.xpluem.com/'.$link.'/'.$phone,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -109,6 +109,25 @@ curl_close($curl);
 echo $response;
 ```
 
+# NODEJS
+
+```javascript
+const axios = require('axios');
+
+const link = 'ลิงค์ซองของขวัญ';
+const phone = 'เบอร์ผู้รับ';
+
+const trueMoneyAngpao = async () => {
+    try {
+        const response = await axios.get(`https://api.xpluem.com/${link}/${phone}`);
+        console.log(response.data);
+    } catch (error) {
+        console.error('Error:', error.response ? error.response.data : error.message);
+    }
+};
+
+trueMoneyAngpao();
+```
 
 ## **หมายเหตุ**
 
