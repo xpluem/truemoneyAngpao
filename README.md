@@ -88,6 +88,8 @@ GET https://api.xpluem.com/abc1234567890/0801234567
 
 ---
 
+## **ตัวอย่างโค๊ด**
+
 # CURL
 
 ```cmd
