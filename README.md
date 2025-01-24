@@ -1,4 +1,4 @@
 # truemoneyAngpao
 
-# URL API
-https://api.xpluem.com/ลิงค์ซองของขวัญ/เบอร์ผู้รับเงิน
+URL API : https://api.xpluem.com/:link/:phone
+link = https://gift.truemoney.com/campaign/?v=ลิงค์ซองของขวัญ  <---- ลิงค์ซองของขวัญคือลิ้งหลัง ?v=
