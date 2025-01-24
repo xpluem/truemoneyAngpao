@@ -88,12 +88,16 @@ GET https://api.xpluem.com/abc1234567890/0801234567
 
 ---
 
+# CURL
+
+```cmd
+curl --location 'https://api.xpluem.com/ลิงค์ซองของขวัญ/เบอร์รับเงิน'
+```
 # PHP
 
 ```php
 $link = 'ลิงค์ซองของขวัญ';
-$phone = 'เบอร์ผู้รับ';
-
+$phone = 'เบอร์ผู้รับเงิน';
 $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://api.xpluem.com/'.$link.'/'.$phone,
@@ -107,7 +111,6 @@ curl_setopt_array($curl, array(
 ));
 $response = curl_exec($curl);
 curl_close($curl);
-
 echo $response;
 ```
 
@@ -117,7 +120,7 @@ echo $response;
 const axios = require('axios');
 
 const link = 'ลิงค์ซองของขวัญ';
-const phone = 'เบอร์ผู้รับ';
+const phone = 'เบอร์ผู้รับเงิน';
 
 const trueMoneyAngpao = async () => {
     try {
